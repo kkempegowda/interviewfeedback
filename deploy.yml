@@ -1,0 +1,8 @@
+---
+- hosts: stagging
+  user: azureuser
+  tasks:
+  - name: Removing previous war
+    file: path=/home/azureuser/apache-tomcat-8.0.32/webapps/CustomerOnBoard-1.1.0-SNAPSHOT.war state=absent
+  - name: Deploying war file
+    copy: src=/var/lib/jenkins/workspace/CustomerOnBoard-Deploy/target/ dest=/home/azureuser/apache-tomcat-8.0.32/webapps/

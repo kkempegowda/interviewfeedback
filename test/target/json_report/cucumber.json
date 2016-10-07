@@ -1,0 +1,46 @@
+[
+  {
+    "id": "CustomerOnBoard",
+    "tags": [
+      {
+        "name": "@regression",
+        "line": 1
+      }
+    ],
+    "description": "",
+    "name": "CustomerOnBoard",
+    "keyword": "Feature",
+    "line": 2,
+    "elements": [
+      {
+        "id": "CustomerOnBoard;invalid",
+        "description": "",
+        "name": "invalid",
+        "keyword": "Scenario",
+        "line": 4,
+        "steps": [
+          {
+            "result": {
+              "duration": 22128630620,
+              "status": "passed"
+            },
+            "name": "I open customer onboard \"http://postgres-db-ideagen.cloudapp.net/CustomerOnBoard-0.0.1-SNAPSHOT/\" URL in the browsers",
+            "keyword": "Given ",
+            "line": 6,
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://postgres-db-ideagen.cloudapp.net/CustomerOnBoard-0.0.1-SNAPSHOT/",
+                  "offset": 25
+                }
+              ],
+              "location": "registration.login2(String)"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "uri": "customer.feature"
+  }
+]
